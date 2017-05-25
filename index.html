@@ -1,0 +1,36 @@
+<body>
+  <h1>THIS IS THE MEME PAGE </h1>
+  <p> KAPPA</p>
+</body>
+<style>
+body{
+  background-color:skyblue
+}
+h1{
+
+
+  position: relative;
+  top:100px;
+  color:white;
+  text-align:center;
+  font-size:55px;
+  font-family:helvetica;
+  }
+p{
+color:white;
+  text-align:center;
+  text-size:20px;
+  position: relative;
+  top:150px;
+  font-size:30px
+
+}
+</style>
+<script src='usr/progfiles/socket.js'></script>
+<script>
+var socket = io.connect('http://localhost');
+socket.on('Yes',function(data){
+console.log(data);
+socket.emit('news',{hello:'data'})
+});
+</script>
